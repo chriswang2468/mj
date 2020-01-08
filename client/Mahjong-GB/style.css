@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+  overflow: hidden;
+}
+
+.inlineDiv {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#gameBoard {
+  width: 900px;
+  height: 700px;
+  transform: translate(0,0);
+  border: 1px solid green;
+  background-color: #CCFFCC;
+}
+
+.playerInfo {
+  position: absolute;
+  /*border: 1px solid green;*/
+  /*background-color: #66FFFF;*/
+}
+
+.debugArea {
+  position: absolute;
+  /*border: 1px solid green;*/
+}
+
+.tile {
+  position: absolute;
+  /*border: 1px solid green;*/
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}

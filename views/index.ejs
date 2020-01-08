@@ -1,0 +1,32 @@
+<% include components/header%>
+<script src="/js/initial_page.js"></script>
+<% include components/loader%>
+ <style>
+nav {
+  display: none;
+}
+</style>
+    <div id= "main-container" class="container-fluid" >
+        <div class="row" >
+            <div class="col-6">
+                    <div class="btn-group">
+                            <button class="btn btn-warning btn-lg dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select files...
+                            </button>
+                            <div class="dropdown-menu">
+                                <% file.forEach(function (file) {%>
+                                        <a class="dropdown-item" href="javascript:void(0);" onclick="selectedFile(this)" value=<%= file.id%> ><%= file.fileName %></a>
+                                <%}) %>
+                            </div>
+                            
+                            </div>
+                            <div id= "list_matches" class="list-group">
+                                
+                            </div>
+            </div>
+            <div class="col-6">
+            
+            </div>
+        </div>
+    </div>
+<% include components/footer %>

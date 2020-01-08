@@ -1,0 +1,62 @@
+<script src="/js/components/gameplayer.js"></script>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=rFgCjPHm"></script>
+  <div class="row">
+      <div class="col-sm-2" style="margin-right: 50px;">
+        <div id="myAllCommnent" class="comment_all_section" ></div>
+          <div class="col">
+              <div id="myComment_2" class="comment_section hide">
+                </div>
+          </div>
+          <br>
+          <div class="col">
+              <div id="myComment_3" class="comment_section hide">
+                </div>
+          </div>
+        </div>
+    <div class="col-8" style="text-align: center;">
+      <div id="svg_area">
+        <svg id="animation" width="1070" height="1000">
+         
+        </svg>
+      </div>
+      <div class="slidecontainer" style="text-align:right;" width="1070">
+
+        <button type="button" onclick="play()" id="playbutton" style="margin-bottom:2px;display: none;"><i class="fas fa-play fa-4x" ></i></button>
+        <button type="button" onclick="pause()" id="pausebutton" ><i class="fas fa-pause fa-4x" ></i></button>
+          <input type="range" min="0" max="0" value="1" class="slider" id="myRange" onchange="dragSteps(this.value)">
+          
+          <button type="button"  id="speed_button" ><i class="fas fa-tachometer-alt fa-4x"></i></button>
+          <button type="button"  id="comment_button"><i class="fas fa-comment-dots fa-4x"></i></button>
+          <button type="button"  id="volume_off_button" style="display: none; "><i class="fas fa-volume-mute fa-4x"></i></button>
+          <button type="button"  id="volume_on_button"><i class="fas fa-volume-up fa-4x"></i></button>
+          <br>
+          <h5 style="float:center;padding-right:960px;">当前回合: <span id="demo"></span></h5>
+          <div id="speed_bar" style="display: none;" >
+            
+          <h5 style="float:right;">快</h5>
+          <input style="margin-top:-2px;" type="range" min="-5" max="5" value="0" class="slider-speed" id="mySpeed" onchange="updateSpeed(this.value)">
+          <h5 style="margin-top:-15px;">慢</h5>
+          </div>
+          
+          <script src="/js/match_handler.js"></script>
+          
+        </div>
+        
+    </div>
+    <div class="col-sm-2" style="margin-left: -100px;">
+        <div class="col">
+            <div id="myComment_1" class="comment_section hide">
+              </div>
+        </div>
+        <br>
+        <div class="col">
+            <div id="myComment_0" class="comment_section hide">
+              </div>
+        </div>
+      
+    </div>
+  </div>
+
+
+
+
